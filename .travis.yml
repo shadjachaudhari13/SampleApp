@@ -20,6 +20,7 @@ env:
  - ADB_INSTALL_TIMEOUT=5 # minutes
 
 android:
+ update: true
  components:
  - tools
  - platform-tools
@@ -45,6 +46,7 @@ before_install:
   - ./gradlew dependencies || true
 
 before_script:
+  - android list targets
   - echo no | android create avd --force -n test -t android-21 --abi armeabi-v7a
   - emulator -avd test -no-skin -no-audio -no-window &
   - android-wait-for-emulator
