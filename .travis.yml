@@ -64,5 +64,6 @@ before_script:
 script:
     - ./gradlew lint app:assembleDebug jacocoTestReportDebug -PdisablePreDex --stacktrace
 
+
 after_success:
     - bash <(curl -s https://codecov.io/bash)
