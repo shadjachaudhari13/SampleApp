@@ -1,6 +1,6 @@
-package com.burhanrashid52.unittestsample.dbTest
+package com.burhanrashid52.samples.dbTest
 
-import com.burhanrashid52.unittestsample.db.User
+import com.burhanrashid52.samples.roomDb.User
 
 /**
  * Created by Burhanuddin Rashid on 1/8/2018.

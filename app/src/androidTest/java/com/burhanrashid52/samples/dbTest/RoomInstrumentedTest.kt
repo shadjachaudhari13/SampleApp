@@ -1,11 +1,11 @@
-package com.burhanrashid52.unittestsample.dbTest
+package com.burhanrashid52.samples.dbTest
 
 import android.arch.persistence.room.Room
 import android.content.Context
 import android.support.test.runner.AndroidJUnit4
-import com.burhanrashid52.unittestsample.db.AppDatabase
-import com.burhanrashid52.unittestsample.db.User
-import com.burhanrashid52.unittestsample.db.UserDao
+import com.burhanrashid52.samples.roomDb.AppDatabase
+import com.burhanrashid52.samples.roomDb.User
+import com.burhanrashid52.samples.roomDb.UserDao
 import org.junit.After
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertNotEquals

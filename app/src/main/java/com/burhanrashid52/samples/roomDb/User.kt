@@ -1,4 +1,4 @@
-package com.burhanrashid52.unittestsample.db
+package com.burhanrashid52.samples.roomDb
 
 import android.arch.persistence.room.Entity
 import android.arch.persistence.room.PrimaryKey

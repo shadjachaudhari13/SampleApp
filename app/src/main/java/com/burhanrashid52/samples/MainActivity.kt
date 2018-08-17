@@ -1,19 +1,20 @@
-package com.burhanrashid52.unittestsample
+package com.burhanrashid52.samples
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import android.util.Log
-import com.burhanrashid52.unittestsample.db.RoomDB
-import java.beans.PropertyChangeListener
+import com.burhanrashid52.samples.motionLayout.MotionActivity
+import com.burhanrashid52.samples.roomDb.RoomDB
 
 class MainActivity : AppCompatActivity() {
 
 
-    val TAG = "MainActivity"
+    companion object {
+        private const val TAG = "MainActivity"
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val userDao = RoomDB.getDefaultInstance(context = this).userDao()
+        MotionActivity.launch(this)
     }
 }

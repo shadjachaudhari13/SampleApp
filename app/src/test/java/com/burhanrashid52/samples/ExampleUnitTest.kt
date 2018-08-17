@@ -1,4 +1,4 @@
-package com.burhanrashid52.unittestsample
+package com.burhanrashid52.samples
 
 import org.junit.Test
 
