@@ -19,13 +19,39 @@
         motion:duration="1000">
         <OnSwipe
             motion:dragDirection="dragUp"
-            motion:touchAnchorId="@+id/button"
+            motion:touchAnchorId="@+id/view"
             motion:touchAnchorSide="bottom" />
+
+        <KeyFrameSet>
+            <KeyPosition
+                motion:framePosition="75"
+                motion:keyPositionType="parentRelative"
+                motion:percentX="0.75"
+                motion:percentY="0.50"
+                motion:target="@+id/image" />
+        </KeyFrameSet>
+
+        <KeyFrameSet>
+            <KeyPosition
+                motion:framePosition="50"
+                motion:keyPositionType="parentRelative"
+                motion:percentX="-0.1"
+                motion:percentY="0.2"
+                motion:target="@+id/btnSample" />
+
+            <KeyAttribute
+                android:rotation="-90"
+                android:scaleX="2"
+                android:scaleY="2"
+                motion:framePosition="50"
+                motion:target="@id/btnSample" />
+        </KeyFrameSet>
+
     </Transition>
 
     <ConstraintSet android:id="@+id/start">
         <Constraint
-            android:id="@id/button"
+            android:id="@id/view"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:background="@android:color/holo_red_dark"
@@ -63,13 +89,23 @@
             motion:layout_constraintGuide_percent="1.0" />
 
         <Constraint
+            android:id="@+id/btnSample"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginStart="16dp"
+            android:text="Sample button"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintStart_toStartOf="parent" />
+
+        <Constraint
             android:id="@id/image"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            motion:layout_constraintBottom_toBottomOf="@+id/button"
-            motion:layout_constraintEnd_toEndOf="@+id/button"
-            motion:layout_constraintStart_toStartOf="@+id/button"
-            motion:layout_constraintTop_toTopOf="@+id/button">
+            motion:layout_constraintBottom_toBottomOf="@+id/view"
+            motion:layout_constraintEnd_toEndOf="@+id/view"
+            motion:layout_constraintStart_toStartOf="@+id/view"
+            motion:layout_constraintTop_toTopOf="@+id/view">
 
             <!--Cross fade animation from src image to altscr image-->
             <CustomAttribute
@@ -98,7 +134,7 @@
 
     <ConstraintSet android:id="@+id/end">
         <Constraint
-            android:id="@id/button"
+            android:id="@id/view"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:background="@android:color/holo_red_dark"
@@ -136,13 +172,23 @@
             motion:layout_constraintGuide_percent="0.975" />
 
         <Constraint
+            android:id="@id/btnSample"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Sample button"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintTop_toTopOf="parent" />
+
+        <Constraint
             android:id="@id/image"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            motion:layout_constraintBottom_toBottomOf="@+id/button"
-            motion:layout_constraintEnd_toEndOf="@+id/button"
-            motion:layout_constraintStart_toStartOf="@+id/button"
-            motion:layout_constraintTop_toTopOf="@+id/button">
+            motion:layout_constraintBottom_toBottomOf="@+id/view"
+            motion:layout_constraintEnd_toEndOf="@+id/view"
+            motion:layout_constraintStart_toStartOf="@+id/view"
+            motion:layout_constraintTop_toTopOf="@+id/view">
 
             <!--Cross fade animation from src image to altscr image-->
             <CustomAttribute
