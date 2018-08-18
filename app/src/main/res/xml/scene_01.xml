@@ -71,9 +71,25 @@
             motion:layout_constraintStart_toStartOf="@+id/button"
             motion:layout_constraintTop_toTopOf="@+id/button">
 
+            <!--Cross fade animation from src image to altscr image-->
             <CustomAttribute
                 motion:attributeName="crossfade"
                 motion:customFloatValue="0" />
+
+            <!--Make a saturation effect on image-->
+            <!-- <CustomAttribute
+                 motion:attributeName="saturation"
+                 motion:customFloatValue="0" />-->
+
+            <!--Change the contrast of image from given float value-->
+            <!--<CustomAttribute
+                motion:attributeName="contrast"
+                motion:customFloatValue="0.5" />-->
+
+            <!--Warmth effect on src image-->
+            <!-- <CustomAttribute
+                 motion:attributeName="warmth"
+                 motion:customFloatValue="1" />-->
 
         </Constraint>
 
@@ -128,9 +144,25 @@
             motion:layout_constraintStart_toStartOf="@+id/button"
             motion:layout_constraintTop_toTopOf="@+id/button">
 
+            <!--Cross fade animation from src image to altscr image-->
             <CustomAttribute
                 motion:attributeName="crossfade"
                 motion:customFloatValue="1" />
+
+            <!--Make a saturation effect on image-->
+            <!--   <CustomAttribute
+                   motion:attributeName="saturation"
+                   motion:customFloatValue="1" />-->
+
+            <!--Change the contrast of image from given float value-->
+            <!-- <CustomAttribute
+                 motion:attributeName="contrast"
+                 motion:customFloatValue="1" />-->
+
+            <!--Warmth effect on src image-->
+            <!--<CustomAttribute
+                motion:attributeName="warmth"
+                motion:customFloatValue="0.5" />-->
 
         </Constraint>
 
