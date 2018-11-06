@@ -1,2 +1,2 @@
 # SampleApp
-Sample
+Sample App
