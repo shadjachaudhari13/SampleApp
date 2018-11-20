@@ -1,2 +1,2 @@
 # SampleApp
-Sample App test again
+Sample App
