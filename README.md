@@ -1,2 +1,2 @@
 # SampleApp
-Sample App hello
+Sample App
