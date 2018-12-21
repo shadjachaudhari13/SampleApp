@@ -46,6 +46,9 @@ jobs:
       - run:
           name: Run Espresso UI Tests
           command: ./gradlew :app:connectedDebugAndroidTest
+      - run:
+          name: Run UnitTest
+          command: ./gradlew testDebugUnitTest
       - store_artifacts:
           path: app/build/reports
           destination: reports
