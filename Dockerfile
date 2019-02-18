@@ -5,4 +5,4 @@ RUN sudo mkdir -p .gradle app/build/outputs/logs
 COPY --chown=circleci:circleci . .
 RUN sudo chown -R circleci:circleci . && sudo chmod -R 777 .
 RUN ./gradlew androidDependencies
-CMD ["/bin/bash", "-c", "/sampleapp/start.sh"]
+ENTRYPOINT ["/sampleapp/start.sh"]
