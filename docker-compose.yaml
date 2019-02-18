@@ -1,0 +1,11 @@
+version: '3.7'
+services:
+  sampleapp:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    init: true
+    volumes:
+      - type: bind
+        source: .
+        target: /sampleapp/app/build/outputs/apk/debug
